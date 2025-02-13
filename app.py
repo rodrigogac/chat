@@ -24,7 +24,7 @@ def send_message():
     payload = {'message': user_message}
     try:
         response = requests.post(
-            'http://n8n.brs12.com.br/webhook-test/recebeMensagemChat', 
+            'http://n8n.brs12.com.br/webhook/recebeMensagemChat', 
             json=payload,
             timeout=5  # timeout opcional
         )
