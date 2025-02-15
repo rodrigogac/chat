@@ -55,7 +55,8 @@ def send_message():
     }
     try:
         response = requests.post(
-            'http://n8n.brs12.com.br/webhook/recebeMensagemChat', 
+           # 'http://n8n.brs12.com.br/webhook/recebeMensagemChat', 
+            'http://n8n.brs12.com.br/webhook-test/recebeMensagemChat',
             json=payload,
             timeout=5  # Timeout opcional
         )
